@@ -29,6 +29,8 @@ def game_start():
     if score == 0:
       A = random_data(data)
     B = random_data(data)
+    while B == A:
+      B = random_data(data)
 
     display(A, B)
     choice = input("Who has more followers? Type 'A' or 'B': ").upper()
